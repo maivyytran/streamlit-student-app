@@ -13,7 +13,7 @@ with st.form("add_student_form"):
     email = st.text_input("Student Email")
     submitted = st.form_submit_button("Add Student")
 
-        if submitted:
+    if submitted:
         import re
         email_pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
         is_valid_email = re.match(email_pattern, email)
